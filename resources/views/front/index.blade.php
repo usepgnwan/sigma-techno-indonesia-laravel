@@ -291,7 +291,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 col-lg-5 mb-4">
-                        <div class="card-img"> 
+                        <div class="card-img-contact"> 
                             <div class="floating-img-contact" style="background: url('{{ $account->cover_about }}')"></div>
                         </div>
                     </div> 
@@ -329,7 +329,7 @@
                                 </h4>
                             </div>
                             <div class="col-md-4 d-flex  align-items-center justify-content-center">
-                                <a href="javascript:void(0)" class="contact p-2 text-center">Contact</a>
+                                <a class="contact p-2 text-center whatsapp-contact">Contact</a>
                             </div>
                         </div>
                     </div>

@@ -67,6 +67,17 @@ main section {
   background-repeat: no-repeat !important;
   position: relative;
 }
+
+.card-img-contact{
+  border: none;
+  width: 100%;
+  min-height: 324px;
+  border-radius: 40px;
+  background: linear-gradient(180deg, #89C68E 0%, #68BBBC 100%);
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  position: relative;
+}
 .floating-img-contact{
   border: none;
   width: 100%;
@@ -159,6 +170,10 @@ main section {
       height: 244px; 
       background-size: cover !important;
       background-repeat: no-repeat !important;
+  }
+  .card-img-contact{
+    width: 96%;
+    min-height: 220px;
   }
   .floating-img-contact{
     border-radius: 40px;

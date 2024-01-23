@@ -66,7 +66,7 @@
       </div>
     </div> 
   </footer>
-  <a href="#" class="whatsapp-floating d-flex align-items-center justify-content-center"><i class="bi bi-whatsapp"></i></a>
+  <a  class="whatsapp-floating d-flex align-items-center justify-content-center whatsapp-contact"><i class="bi bi-whatsapp"></i></a>
   <div id="preloader"></div>
   <script>
     $(document).ready(function(){
@@ -103,11 +103,26 @@
             $('.li-twitter').addClass(twitter).attr('href', data.twitter)
             $('.li-fb').addClass(fb).attr('href', data.fb)
             $('.li-linkedin').addClass(linkedin).attr('href', data.linkedin)
-            
+            $('.whatsapp-contact').attr('data-phone', data.phone)
           window.title = document.querySelector("title");
           window.title.text = window.title.text+ " | " + data.name ;
           $('link[name="icon"]').attr('href', data.logo)
           $('.hero-page-about').css('background-image',  'url("'+data.cover_about+'")' )
         }
+
+        $('body').on('click','.whatsapp-contact',function(){
+          let wa = $(this).data('phone')
+           var walink = 'https://wa.me/?';
+               walink = 'https://web.whatsapp.com/send',
+              phone = wa,
+              text = '%2AHallo PT SIGMA TECHNO INDONESIA%2A';
+              /* Smartphone Support */
+              if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                  var walink = 'whatsapp://send';
+              }
+              var checkout_whatsapp = walink + '?phone=62'+ phone + '&text=' + text;
+              /* Whatsapp Window Open */
+              window.open(checkout_whatsapp, '_blank');
+        })
     })
   </script>
